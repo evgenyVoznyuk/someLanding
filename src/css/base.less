@@ -1,0 +1,70 @@
+.reset();
+
+a {
+    text-decoration: none;
+	}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	font-family: Ubuntu;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+	&:extend(.sg-tXt);
+}
+
+h2,
+.h2 {
+	.fsc(35);
+	margin: 32px 0;
+}
+
+h3,
+.h3 {
+	.fsc(18);
+	margin: 18px 0;
+}
+
+.container{
+	.wrapper();
+	padding: 0 15px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 12px 51px;
+	cursor: pointer;
+	border-radius: 20px;
+	.fsc(18);
+	margin: 5px;
+	min-width: 98px;
+}
+
+.btn-green {
+	background-color: @color_green;
+	color: @color_white;
+}
+
+.btn-white {
+	border: 1px solid @color_white;
+	color: @color_white;
+}

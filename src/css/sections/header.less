@@ -1,0 +1,29 @@
+.headerItems {
+	&:extend(.sg-row);
+	justify-content: space-between;
+	align-items: center;
+	.md-block({
+		justify-content: center;
+		});
+
+
+	.header__logoMain{
+		&:extend(.sg-col);
+		.md-block({
+			padding: @offset_one_side;
+		});
+	}
+	.menu {
+    &:extend(.sg-col);
+		padding: @offset;
+		&:extend(.sg-row);
+
+
+		&__item {
+			&:extend(.sg-col);
+			a {
+				.fsc(13);
+		  }
+		}
+	}
+}

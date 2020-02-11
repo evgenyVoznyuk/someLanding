@@ -1,0 +1,16 @@
+@color_green: #1d9d73;
+@color_white: #fff;
+@color_dark: #333;
+@color_light: #f7f8fa;
+
+// @path_img: ../img/;
+
+@text_size: 12; //px для .fsc
+@text_offset: 5px;
+
+
+.ie11(@content){
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		@content();
+	}
+}

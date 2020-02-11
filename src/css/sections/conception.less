@@ -1,0 +1,43 @@
+.conception{
+
+	&__description{
+
+		p {
+			&:extend(.sg-tXt);
+			.fsc(@text_size, @color_dark);
+			margin: 0 0 @text_offset;
+		}
+	}
+
+	&__items{
+		&:extend(.sg-row);
+		padding: @offset 0;
+		.sm-block({
+			justify-content: center;
+			.tXt();
+			});
+
+		.conceptionItem{
+			.sm-block({
+				margin-bottom: 20px;
+			});
+
+			&:extend(.sg-col);
+			.size(4);
+			.size-sm(8);
+			.size-xs(12);
+
+			&__title{
+				&:extend(.sg-tXt);
+				color: @color_green;
+			}
+
+			&__text{
+				&:extend(.sg-tXt);
+				.fsc(@text_size, @color_dark);
+				line-height: @text_size + @text_offset;
+
+			}
+		}
+	}
+}

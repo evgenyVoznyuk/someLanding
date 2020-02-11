@@ -1,0 +1,27 @@
+.slider{
+	background: url('../img/slaid1.jpg') no-repeat top center;
+	max-width: 2018px;
+	min-height: 620px;
+	display: flex;
+	margin: 0 auto;
+
+
+	&__slide{
+		margin: auto;
+		&:extend(.sg-tXt);
+
+		.slideContent{
+
+			&__text{
+
+				&-firstRow{
+					.fsc(35, @color_white);
+				}
+
+				&-secondRow{
+					.fsc(45, @color_white);
+				}
+			}
+		}
+	}
+}

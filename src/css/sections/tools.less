@@ -1,0 +1,44 @@
+.tools{
+	background-color: @color_light;
+	max-width: 2018px;
+	margin: 0 auto;
+	padding: @offset_one_side 0;
+
+	&__items{
+		&:extend(.sg-row);
+
+		.toolsItem{
+			&:extend(.sg-col);
+			.size(4);
+			.size-md(6);
+			.size-xs(12);
+			display: flex;
+			align-items: flex-start;
+
+			&__img{
+				flex: 1 1 200px;
+				&:extend(.sg-tXt);
+			}
+
+			&__description{
+				padding: 0 5px;
+			}
+
+			&__title{
+				text-align: left;
+			}
+
+			&__text{
+				.fsc(@text_size, @color_dark);
+				line-height: @text_size + @text_offset;
+			}
+
+			&__readMore{
+				padding: 10px 0;
+				a{
+					.fsc(13, @color_green)
+				}
+			}
+		}
+	}
+}
